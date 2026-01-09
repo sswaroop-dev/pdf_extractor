@@ -3,6 +3,4 @@
 .env
 venv/
 *.log
-src/data/raw/**/*
-src/data/validated/**/*
-src/data/normalized/**/*
+
