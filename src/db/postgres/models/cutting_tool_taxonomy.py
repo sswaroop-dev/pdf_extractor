@@ -3,6 +3,7 @@ from typing import Optional
 
 from sqlalchemy import DateTime, PrimaryKeyConstraint, String
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy_utils import Ltree, LtreeType
 
 from .base import Base
 
@@ -13,13 +14,13 @@ class CuttingToolTaxonomy(Base):
         PrimaryKeyConstraint('code', name='cutting_tool_taxonomy_pkey'),
     )
 
-    code: Mapped[str] = mapped_column(
-        String(100), 
+    code: Mapped[Ltree] = mapped_column(
+        LtreeType, 
         primary_key=True,
         nullable=False
     )
-    parent_code: Mapped[Optional[str]] = mapped_column(
-        String(100), 
+    parent_code: Mapped[Optional[Ltree]] = mapped_column(
+        LtreeType, 
         nullable=True
     )
     name: Mapped[str] = mapped_column(

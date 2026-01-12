@@ -27,7 +27,7 @@ class CompanyToolMapping(Base):
         autoincrement=True
     )
     company_id: Mapped[int] = mapped_column(BigInteger, nullable=False)
-    tool_id: Mapped[int] = mapped_column(BigInteger, nullable=False)
+    tool_id: Mapped[int] = mapped_column(BigInteger, nullable=True)
     tool_master_id: Mapped[int] = mapped_column(
         BigInteger, 
         ForeignKey('tool_master.id'),
