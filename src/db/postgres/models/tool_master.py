@@ -1,10 +1,12 @@
 from datetime import datetime, timezone
 
 from sqlalchemy import (
-    BigInteger, DateTime, Float, ForeignKey, PrimaryKeyConstraint, String
+    BigInteger, Computed, DateTime, Float, ForeignKey, PrimaryKeyConstraint, 
+    String
 )
 from sqlalchemy.dialects.postgresql import JSONB
 from sqlalchemy.orm import Mapped, mapped_column, relationship
+from sqlalchemy_utils import Ltree, LtreeType
 
 from .base import Base
 
@@ -21,20 +23,24 @@ class ToolMaster(Base):
         autoincrement=True
     )
     name: Mapped[str] = mapped_column(String(100), nullable=False)
-    diameter: Mapped[float] = mapped_column(Float(53), nullable=False)
+    max_diameter: Mapped[float] = mapped_column(
+        Float(53),
+        Computed("(attributes->>'max_diameter')::float", persisted=True),
+        nullable=False
+    )
     attributes: Mapped[dict] = mapped_column(JSONB, nullable=False)
-    tool_taxonomy_code: Mapped[str] = mapped_column(
-        String(100), 
+    tool_taxonomy_code: Mapped[Ltree] = mapped_column(
+        LtreeType, 
         ForeignKey('tool_taxonomy.code'),
         nullable=False
     )
-    cutting_tool_material_taxonomy_code: Mapped[str] = mapped_column(
-        String(100), 
+    cutting_tool_material_taxonomy_code: Mapped[Ltree] = mapped_column(
+        LtreeType, 
         ForeignKey('cutting_tool_taxonomy.code'),
         nullable=False
     )
-    cutting_tool_coating_code: Mapped[str] = mapped_column(
-        String(100), 
+    cutting_tool_coating_code: Mapped[Ltree] = mapped_column(
+        LtreeType, 
         ForeignKey('cutting_tool_taxonomy.code'),
         nullable=False
     )

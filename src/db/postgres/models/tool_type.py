@@ -1,18 +1,19 @@
 from datetime import datetime, timezone
 
 from sqlalchemy import (
-    BigInteger, Boolean, DateTime, ForeignKey, PrimaryKeyConstraint, String
+    BigInteger, DateTime, Index, PrimaryKeyConstraint, String, UniqueConstraint
 )
 from sqlalchemy.orm import Mapped, mapped_column, relationship
-from sqlalchemy_utils import Ltree, LtreeType
 
 from .base import Base
 
 
-class ToolAttribute(Base):
-    __tablename__ = 'tool_attribute'
+class ToolType(Base):
+    __tablename__ = 'myapp_tooltype'
     __table_args__ = (
-        PrimaryKeyConstraint('id', name='tool_attribute_pkey'),
+        PrimaryKeyConstraint('id', name='myapp_tooltype_pkey'),
+        UniqueConstraint('name', name='myapp_tooltype_name_3799346c_uniq'),
+        Index('idx_tool_type_name', 'name')
     )
 
     id: Mapped[int] = mapped_column(
@@ -21,14 +22,6 @@ class ToolAttribute(Base):
         autoincrement=True
     )
     name: Mapped[str] = mapped_column(String(100), nullable=False)
-    type: Mapped[str] = mapped_column(String(100), nullable=False)
-    required: Mapped[bool] = mapped_column(Boolean, nullable=False)
-    tool_taxonomy_code: Mapped[Ltree] = mapped_column(
-        LtreeType, 
-        ForeignKey('tool_taxonomy.code'),
-        nullable=False
-    )
-
     created_at: Mapped[datetime] = mapped_column(
         DateTime(True), 
         nullable=False,
@@ -40,9 +33,8 @@ class ToolAttribute(Base):
         default=datetime.now(timezone.utc),
         onupdate=datetime.now(timezone.utc)
     )
-
-    tool_taxonomy: Mapped['ToolTaxonomy'] = relationship(
-        'ToolTaxonomy',
-        foreign_keys=[tool_taxonomy_code],
-        back_populates='tool_attribute'
+    
+    tool: Mapped[list['Tool']] = relationship(
+        'Tool', 
+        back_populates='tool_type'
     )
