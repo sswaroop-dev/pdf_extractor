@@ -1,0 +1,870 @@
+The details extracted from the provided document have been structured into the following JSON format. The data is organized by page number and content type (Title, Instructions, Text, Tables, Formulas).
+
+```json
+{
+  "document_title": "Speeds and Feeds",
+  "source": "Haas Tooling | HaasCNC",
+  "pages": [
+    {
+      "page_number": 1,
+      "type": "Title Slide",
+      "main_topic": "Side Cutting"
+    },
+    {
+      "page_number": 2,
+      "type": "Data Table (Side Cutting)",
+      "end_mill_series": "HM42",
+      "instructions": [
+        "Select your material in the ISO colored chart with respect to material description.",
+        "Start with a middle/average value for spindle speed, n (RPM) and feed rate, Vf (in/min). Adjust the spindle speed and/or feed rate based on your cutting conditions."
+      ],
+      "cutting_conditions": {
+        "ap": "Ap (Axial Depth of Cut)",
+        "ae": "Ae (Radial Depth of Cut)",
+        "mode": "Side Cutting"
+      },
+      "recommendations": [
+        {
+          "group_iso": 21,
+          "material_description": "Aluminum-wrought alloy",
+          "width_of_cut_ae": "1/8~5/16 = 0.25D or 7/16~13/16 = 0.5D",
+          "depth_of_cut_ap": "1.0D",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 445,
+              "Fz_IPT": 0.0026,
+              "n_RPM": 6800,
+              "Vf_IPM": 36
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 425,
+              "Fz_IPT": 0.005,
+              "n_RPM": 5200,
+              "Vf_IPM": 54
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 500,
+              "Fz_IPT": 0.0056,
+              "n_RPM": 5100,
+              "Vf_IPM": 57
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0059,
+              "n_RPM": 5000,
+              "Vf_IPM": 59
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 590,
+              "Fz_IPT": 0.0065,
+              "n_RPM": 4500,
+              "Vf_IPM": 59
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 515,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 3500,
+              "Vf_IPM": 61
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 3500,
+              "Vf_IPM": 61
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 450,
+              "Fz_IPT": 0.014,
+              "n_RPM": 2300,
+              "Vf_IPM": 64
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 525,
+              "Fz_IPT": 0.016,
+              "n_RPM": 2000,
+              "Vf_IPM": 64
+            }
+          ]
+        },
+        {
+          "group_iso": 22,
+          "material_description": "Aluminum-wrought alloy",
+          "width_of_cut_ae": "1/8~5/16 = 0.25D or 7/16~13/16 = 0.5D",
+          "depth_of_cut_ap": "1.0D",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 445,
+              "Fz_IPT": 0.0026,
+              "n_RPM": 6800,
+              "Vf_IPM": 36
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 425,
+              "Fz_IPT": 0.005,
+              "n_RPM": 5200,
+              "Vf_IPM": 54
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 500,
+              "Fz_IPT": 0.0056,
+              "n_RPM": 5100,
+              "Vf_IPM": 57
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0059,
+              "n_RPM": 5000,
+              "Vf_IPM": 59
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 590,
+              "Fz_IPT": 0.0065,
+              "n_RPM": 4500,
+              "Vf_IPM": 59
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 515,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 3500,
+              "Vf_IPM": 61
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 3500,
+              "Vf_IPM": 61
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 450,
+              "Fz_IPT": 0.014,
+              "n_RPM": 2300,
+              "Vf_IPM": 64
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 525,
+              "Fz_IPT": 0.016,
+              "n_RPM": 2000,
+              "Vf_IPM": 64
+            }
+          ]
+        },
+        {
+          "group_iso": 23,
+          "material_description": "Aluminum-cast, alloyed",
+          "width_of_cut_ae": "1/8~5/16 = 0.25D or 7/16~13/16 = 0.5D",
+          "depth_of_cut_ap": "1.0D",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 290,
+              "Fz_IPT": 0.0026,
+              "n_RPM": 4420,
+              "Vf_IPM": 23
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 275,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 3380,
+              "Vf_IPM": 35
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 325,
+              "Fz_IPT": 0.0056,
+              "n_RPM": 3320,
+              "Vf_IPM": 37
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0059,
+              "n_RPM": 3250,
+              "Vf_IPM": 38
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 385,
+              "Fz_IPT": 0.0065,
+              "n_RPM": 2930,
+              "Vf_IPM": 38
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 335,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 2280,
+              "Vf_IPM": 40
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 2280,
+              "Vf_IPM": 40
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 295,
+              "Fz_IPT": 0.014,
+              "n_RPM": 1500,
+              "Vf_IPM": 42
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 340,
+              "Fz_IPT": 0.016,
+              "n_RPM": 1300,
+              "Vf_IPM": 41
+            }
+          ]
+        },
+        {
+          "group_iso": 24,
+          "material_description": "Aluminum-cast, alloyed",
+          "width_of_cut_ae": "1/8~5/16 = 0.25D or 7/16~13/16 = 0.5D",
+          "depth_of_cut_ap": "1.0D",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 290,
+              "Fz_IPT": 0.0026,
+              "n_RPM": 4420,
+              "Vf_IPM": 23
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 275,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 3380,
+              "Vf_IPM": 35
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 325,
+              "Fz_IPT": 0.0056,
+              "n_RPM": 3320,
+              "Vf_IPM": 37
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0059,
+              "n_RPM": 3250,
+              "Vf_IPM": 38
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 385,
+              "Fz_IPT": 0.0065,
+              "n_RPM": 2930,
+              "Vf_IPM": 38
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 335,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 2280,
+              "Vf_IPM": 40
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 2280,
+              "Vf_IPM": 40
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 295,
+              "Fz_IPT": 0.014,
+              "n_RPM": 1500,
+              "Vf_IPM": 42
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 340,
+              "Fz_IPT": 0.016,
+              "n_RPM": 1300,
+              "Vf_IPM": 41
+            }
+          ]
+        },
+        {
+          "group_iso": 25,
+          "material_description": "Unknown (Parameters match 23/24)",
+          "width_of_cut_ae": "1/8~5/16 = 0.25D or 7/16~13/16 = 0.5D",
+          "depth_of_cut_ap": "1.0D",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 290,
+              "Fz_IPT": 0.0026,
+              "n_RPM": 4420,
+              "Vf_IPM": 23
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 275,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 3380,
+              "Vf_IPM": 35
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 325,
+              "Fz_IPT": 0.0056,
+              "n_RPM": 3320,
+              "Vf_IPM": 37
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0059,
+              "n_RPM": 3250,
+              "Vf_IPM": 38
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 385,
+              "Fz_IPT": 0.0065,
+              "n_RPM": 2930,
+              "Vf_IPM": 38
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 335,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 2280,
+              "Vf_IPM": 40
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0088,
+              "n_RPM": 2280,
+              "Vf_IPM": 40
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 295,
+              "Fz_IPT": 0.014,
+              "n_RPM": 1500,
+              "Vf_IPM": 42
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 340,
+              "Fz_IPT": 0.0159,
+              "n_RPM": 1300,
+              "Vf_IPM": 41
+            }
+          ]
+        }
+      ],
+      "general_notes": [
+        "All cutting data are target values. Maximum recommended depth shown.",
+        "Finish cuts typically require reduced feed rates and/or higher spindle speed, with a radial depth of cut, ae of (2%)XD or less.",
+        "Reduce speed and feed recommendations for materials harder than listed.",
+        "Reduce cut depth and feed by 50% for long-flute or long-reach tools.",
+        "Above recommendations are based on ideal conditions. Adjust parameters accordingly for smaller taper machining centers or less rigid conditions."
+      ],
+      "tech_tips": {
+        "description": "The tables above are based on common machining calculators. We realize that shops may not have the RPM capability shown in the tables. To adapt the tables to the machining conditions available, use the following calculation:",
+        "calculation": "(Recommended Feed IPM / Recommended RPM) X Available RPM = IPM"
+      }
+    },
+    {
+      "page_number": 3,
+      "type": "Title Slide",
+      "main_topic": "Slotting"
+    },
+    {
+      "page_number": 4,
+      "type": "Data Table (Slotting)",
+      "end_mill_series": "HM42",
+      "instructions": [
+        "Select your material in the ISO colored chart with respect to material description.",
+        "Start with a middle/average value for spindle speed, n (RPM) and feed rate, Vf (in/min). Adjust the spindle speed and/or feed rate based on your cutting conditions."
+      ],
+      "cutting_conditions": {
+        "ap": "Ap (Axial Depth of Cut)",
+        "ae": "Ae (Radial Depth of Cut)",
+        "mode": "Slotting"
+      },
+      "recommendations": [
+        {
+          "group_iso": 21,
+          "material_description": "Aluminum-wrought alloy",
+          "width_of_cut_ae": "1.0D",
+          "depth_of_cut_ap": "0.50",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 445,
+              "Fz_IPT": 0.0021,
+              "n_RPM": 6800,
+              "Vf_IPM": 29
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 425,
+              "Fz_IPT": 0.0042,
+              "n_RPM": 5200,
+              "Vf_IPM": 44
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 500,
+              "Fz_IPT": 0.0047,
+              "n_RPM": 5100,
+              "Vf_IPM": 46
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0047,
+              "n_RPM": 5000,
+              "Vf_IPM": 47
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 590,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 4500,
+              "Vf_IPM": 47
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 515,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 3500,
+              "Vf_IPM": 49
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 3500,
+              "Vf_IPM": 51
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 450,
+              "Fz_IPT": 0.0111,
+              "n_RPM": 2300,
+              "Vf_IPM": 51
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 525,
+              "Fz_IPT": 0.0127,
+              "n_RPM": 2000,
+              "Vf_IPM": 51
+            }
+          ]
+        },
+        {
+          "group_iso": 22,
+          "material_description": "Aluminum-wrought alloy",
+          "width_of_cut_ae": "1.0D",
+          "depth_of_cut_ap": "0.50",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 445,
+              "Fz_IPT": 0.0021,
+              "n_RPM": 6800,
+              "Vf_IPM": 29
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 425,
+              "Fz_IPT": 0.0042,
+              "n_RPM": 5200,
+              "Vf_IPM": 44
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 500,
+              "Fz_IPT": 0.0047,
+              "n_RPM": 5100,
+              "Vf_IPM": 46
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0047,
+              "n_RPM": 5000,
+              "Vf_IPM": 47
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 590,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 4500,
+              "Vf_IPM": 47
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 515,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 3500,
+              "Vf_IPM": 49
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 575,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 3500,
+              "Vf_IPM": 51
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 450,
+              "Fz_IPT": 0.0111,
+              "n_RPM": 2300,
+              "Vf_IPM": 51
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 525,
+              "Fz_IPT": 0.0127,
+              "n_RPM": 2000,
+              "Vf_IPM": 51
+            }
+          ]
+        },
+        {
+          "group_iso": 23,
+          "material_description": "Aluminum-cast, alloyed",
+          "width_of_cut_ae": "1.0D",
+          "depth_of_cut_ap": "0.50",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 290,
+              "Fz_IPT": 0.0021,
+              "n_RPM": 4420,
+              "Vf_IPM": 19
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 275,
+              "Fz_IPT": 0.0042,
+              "n_RPM": 3380,
+              "Vf_IPM": 28
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 325,
+              "Fz_IPT": 0.0045,
+              "n_RPM": 3320,
+              "Vf_IPM": 30
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0047,
+              "n_RPM": 3250,
+              "Vf_IPM": 31
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 385,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 2930,
+              "Vf_IPM": 31
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 335,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 2280,
+              "Vf_IPM": 32
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 2280,
+              "Vf_IPM": 33
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 295,
+              "Fz_IPT": 0.0111,
+              "n_RPM": 1500,
+              "Vf_IPM": 33
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 340,
+              "Fz_IPT": 0.0127,
+              "n_RPM": 1300,
+              "Vf_IPM": 33
+            }
+          ]
+        },
+        {
+          "group_iso": 24,
+          "material_description": "Aluminum-cast, alloyed",
+          "width_of_cut_ae": "1.0D",
+          "depth_of_cut_ap": "0.50",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 290,
+              "Fz_IPT": 0.0021,
+              "n_RPM": 4420,
+              "Vf_IPM": 19
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 275,
+              "Fz_IPT": 0.0042,
+              "n_RPM": 3380,
+              "Vf_IPM": 28
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 325,
+              "Fz_IPT": 0.0045,
+              "n_RPM": 3320,
+              "Vf_IPM": 30
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0047,
+              "n_RPM": 3250,
+              "Vf_IPM": 31
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 385,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 2930,
+              "Vf_IPM": 31
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 335,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 2280,
+              "Vf_IPM": 32
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 2280,
+              "Vf_IPM": 33
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 295,
+              "Fz_IPT": 0.0111,
+              "n_RPM": 1500,
+              "Vf_IPM": 33
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 340,
+              "Fz_IPT": 0.0127,
+              "n_RPM": 1300,
+              "Vf_IPM": 33
+            }
+          ]
+        },
+        {
+          "group_iso": 25,
+          "material_description": "Unknown (Parameters match 23/24)",
+          "width_of_cut_ae": "1.0D",
+          "depth_of_cut_ap": "0.50",
+          "tool_diameters": [
+            {
+              "diameter_in": "1/4",
+              "Vc_SFM": 290,
+              "Fz_IPT": 0.0021,
+              "n_RPM": 4420,
+              "Vf_IPM": 19
+            },
+            {
+              "diameter_in": "5/16",
+              "Vc_SFM": 275,
+              "Fz_IPT": 0.0042,
+              "n_RPM": 3380,
+              "Vf_IPM": 28
+            },
+            {
+              "diameter_in": "3/8",
+              "Vc_SFM": 325,
+              "Fz_IPT": 0.0045,
+              "n_RPM": 3320,
+              "Vf_IPM": 30
+            },
+            {
+              "diameter_in": "7/16",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0047,
+              "n_RPM": 3250,
+              "Vf_IPM": 31
+            },
+            {
+              "diameter_in": "1/2",
+              "Vc_SFM": 385,
+              "Fz_IPT": 0.0052,
+              "n_RPM": 2930,
+              "Vf_IPM": 31
+            },
+            {
+              "diameter_in": "9/16",
+              "Vc_SFM": 335,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 2280,
+              "Vf_IPM": 32
+            },
+            {
+              "diameter_in": "5/8",
+              "Vc_SFM": 370,
+              "Fz_IPT": 0.0070,
+              "n_RPM": 2280,
+              "Vf_IPM": 33
+            },
+            {
+              "diameter_in": "3/4",
+              "Vc_SFM": 295,
+              "Fz_IPT": 0.0111,
+              "n_RPM": 1500,
+              "Vf_IPM": 33
+            },
+            {
+              "diameter_in": "1\"",
+              "Vc_SFM": 340,
+              "Fz_IPT": 0.0127,
+              "n_RPM": 1300,
+              "Vf_IPM": 33
+            }
+          ]
+        }
+      ],
+      "general_notes": [
+        "All cutting data are target values. Maximum recommended depth shown.",
+        "Finish cuts typically require reduced feed rates and/or higher spindle speed, with a radial depth of cut, ae of (2%)XD or less.",
+        "Reduce speed and feed recommendations for materials harder than listed.",
+        "Reduce cut depth and feed by 50% for long-flute or long-reach tools.",
+        "Above recommendations are based on ideal conditions. Adjust parameters accordingly for smaller taper machining centers or less rigid conditions."
+      ],
+      "tech_tips": {
+        "description": "The tables above are based on common machining calculators. We realize that shops may not have the RPM capability shown in the tables. To adapt the tables to the machining conditions available, use the following calculation:",
+        "calculation": "(Recommended Feed IPM / Recommended RPM) X Available RPM = IPM"
+      }
+    },
+    {
+      "page_number": 5,
+      "type": "Formulas and Definitions (Inch)",
+      "formulas": [
+        {
+          "name": "Feed Rate, Per Revolution (in/min)",
+          "formula": "Vf = fn * n"
+        },
+        {
+          "name": "Feed Rate, Per Tooth (in/min)",
+          "formula": "Vf = fz * n * Z"
+        },
+        {
+          "name": "Feed Per Revolution (in/rev)",
+          "formula": "fn = Vf / n"
+        },
+        {
+          "name": "Feed Per Tooth (in)",
+          "formula": "fz = Vf / (n * Z)"
+        },
+        {
+          "name": "Cutting Speed (ft/min)",
+          "formula": "Vc = (π * Dtool * n) / 12"
+        },
+        {
+          "name": "Spindle Speed (rev/min)",
+          "formula": "n = (Vc * 12) / (π * Dtool)"
+        },
+        {
+          "name": "Material Removal Rate (in³/min)",
+          "formula": "MMR = ap * ae * Vf"
+        }
+      ],
+      "definitions_table": [
+        {
+          "symbol": "Vf",
+          "definition": "Feed rate",
+          "unit": "in/min"
+        },
+        {
+          "symbol": "fn",
+          "definition": "Feed per revolution",
+          "unit": "in/rev"
+        },
+        {
+          "symbol": "fz",
+          "definition": "Feed per tooth",
+          "unit": "in"
+        },
+        {
+          "symbol": "Vc",
+          "definition": "Cutting speed",
+          "unit": "ft/min (SFM)"
+        },
+        {
+          "symbol": "n",
+          "definition": "Spindle speed",
+          "unit": "rev/min (RPM)"
+        },
+        {
+          "symbol": "Dtool",
+          "definition": "Tool cutting diameter",
+          "unit": "in"
+        },
+        {
+          "symbol": "MMR",
+          "definition": "Material removal rate",
+          "unit": "(in³/min)"
+        },
+        {
+          "symbol": "ae",
+          "definition": "Radial depth of cut",
+          "unit": "in"
+        },
+        {
+          "symbol": "ap",
+          "definition": "Axial depth of cut",
+          "unit": "in"
+        },
+        {
+          "symbol": "Z",
+          "definition": "Number of teeth/flutes",
+          "unit": null
+        }
+      ]
+    }
+  ]
+}
+```
