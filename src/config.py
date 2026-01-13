@@ -1,7 +1,6 @@
 from pathlib import Path
 
 from pydantic_settings import BaseSettings, SettingsConfigDict
-from starlette.middleware import P
 
 
 class Settings(BaseSettings):
